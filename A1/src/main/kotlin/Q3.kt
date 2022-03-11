@@ -1,18 +1,20 @@
-class Game{
-    var secret_number : Int
-    var high : Int
-    var low : Int
-    var win_flag :Boolean
-    var player : Player
 
-    fun Game(Player player){
+
+class Game{
+    var secret_number : Int = 0
+    var high : Int = 0
+    var low : Int = 0
+    var win_flag :Boolean = false
+    var player : Player = NULL
+
+    fun Game(player : Player){
 
     }
     fun run(): Void{
-
+        return NULL
     }
     fun hasWon() : Boolean{
-
+        return false
     }
 }
 
@@ -20,7 +22,7 @@ open class Player{
     var name : String = ""
     open fun next(): Int {
         return 0
-    }
+    }ye
 }
 
 class HumanPlayer : Player(){
@@ -42,7 +44,7 @@ class BinarySearch : NaiveAI(){
 }
 
 class SuperAI : NaiveAI(){
-    var next(): Int{
-
+    override fun next(): Int{
+        return 0
     }
 }
